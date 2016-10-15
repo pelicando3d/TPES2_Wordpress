@@ -1,11 +1,11 @@
-WORDPRESS
-======
+#WORDPRESS
 
 
-[TOC]
 
-Introdução
------------
+
+
+##Introdução
+
 
 O Wordpress é uma plataforma semântica para publicação pessoal, focada na estética, nos padrões Web e na usabilidade. Foi produzido e vem sendo atualizado por colaboradores de todo o mundo. O wordpress tem o propósito de facilitar ao usuário a publicação de conteúdo web e é o maior CMS (Content Management System ou Sistema de Gerenciamento de Conteúdo) do mundo, com cerca de 70% do mercado.
 
@@ -18,13 +18,6 @@ Os recursos nativos do Wordpress foram produzidos para tornar a experiência de 
 O usuário ao utilizar o Wordpress poderá personalizar a aparência do seu site utilizando XHTML e CSS. Também é dado a liberdade para que o usuário crie seu próprio tema. Além disso, o usuário tem a liberdade de escrever e utilizar os seus próprios plugins em PHP. 
 O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. 
 
-
-
-
-
-
-
-
 ## Principais desenvolvedores e equipe de desenvolvimento
 
 
@@ -36,33 +29,33 @@ Dentre os membros da comunidade, existe a classe dos WP testers, um grupo de pes
 
 Os times e suas respectivas funções são: 
 
-**Core** Responsáveis por escrever código, corrigir bugs, debater decisões e outras coisas relacionadas ao desenvolvimento da ferramenta. Não é necessário ter uma vasta experiência em PHP. Se a pessoa apenas estuda programação já pode ser aceita no time.
+**Core** - Responsáveis por escrever código, corrigir bugs, debater decisões e outras coisas relacionadas ao desenvolvimento da ferramenta. Não é necessário ter uma vasta experiência em PHP. Se a pessoa apenas estuda programação já pode ser aceita no time.
 
-**Design** Focado no design e desenvolvimento da interface do usuário. Realizam discussões regulares sobre mockups, design e user testing.
+**Design** - Focado no design e desenvolvimento da interface do usuário. Realizam discussões regulares sobre mockups, design e user testing.
 
-**Mobile** Responsáveis pelo desenvolvimento de apps para iOS e Android. São requisitados profissionais aptos a programar em Java, Objective-C ou Swift. Também são necessários designers, especialistas em experiência de usuário e testers.
+**Mobile** - Responsáveis pelo desenvolvimento de apps para iOS e Android. São requisitados profissionais aptos a programar em Java, Objective-C ou Swift. Também são necessários designers, especialistas em experiência de usuário e testers.
 
-**Acessibility** O grupo a11y fornece o conhecimento de acessibilidade necessário para o projeto. 
+**Acessibility** - O grupo a11y fornece o conhecimento de acessibilidade necessário para o projeto. 
 
-**Polyglots** Responsáveis pela tradução do software ou desenvolvimento de tradutores.
+**Polyglots** - Responsáveis pela tradução do software ou desenvolvimento de tradutores.
 
-**Support** O Fórum do Wordpress é o local onde são colocados diversas questões relacionadas a erros, dificuldades de uso, bugs e etc. Qualquer membro pode responder as questões e contribuir para sanar as dúvidas dos outros.
+**Support** - O Fórum do Wordpress é o local onde são colocados diversas questões relacionadas a erros, dificuldades de uso, bugs e etc. Qualquer membro pode responder as questões e contribuir para sanar as dúvidas dos outros.
 
-**Themes** Esse time revisa e aprova cada tema submetido ao Wordpress.
+**Themes** - Esse time revisa e aprova cada tema submetido ao Wordpress.
 
-**Documentation** Responsáveis por escrever a documentação de tudo, incluindo do código, manuais, developer.wordpress.org, admin help, inline docs e tudo que requerer uma explicação por palavras.
+**Documentation** - Responsáveis por escrever a documentação de tudo, incluindo do código, manuais, developer.wordpress.org, admin help, inline docs e tudo que requerer uma explicação por palavras.
 
-**Community** Esta equipe supervisiona eventos oficiais, programas de orientação, busca de contribuintes, e outras formas de fazer a comunidade crescer.
+**Community** - Esta equipe supervisiona eventos oficiais, programas de orientação, busca de contribuintes, e outras formas de fazer a comunidade crescer.
 
-**Plugins** Fiscalizam novos plugins adicionados e então analisam se violam a segurança e/ou as orientações do software.
+**Plugins** - Fiscalizam novos plugins adicionados e então analisam se violam a segurança e/ou as orientações do software.
 
-**Training** A equipe de treinamento cria planos de aula para download e materiais relacionados para instrutores usarem em um ambiente de oficina ao vivo.
+**Training** - A equipe de treinamento cria planos de aula para download e materiais relacionados para instrutores usarem em um ambiente de oficina ao vivo.
 
-**Meta** A equipe Meta é responsável pela manutenção e gerenciamento de websites do domínio wordpress.org. Erros e bugs devem ser apresentados em tickets criados no site.
+**Meta** - A equipe Meta é responsável pela manutenção e gerenciamento de websites do domínio wordpress.org. Erros e bugs devem ser apresentados em tickets criados no site.
 
-**TV** Aprovar e publicar todos os vídeos em wordpress.tv, bem como ajudar a WordCamps (conferência organizada pela comunidade Wordpress) na pós-produção e legendagem de vídeos publicados.
+**TV** - Aprovar e publicar todos os vídeos em wordpress.tv, bem como ajudar a WordCamps (conferência organizada pela comunidade Wordpress) na pós-produção e legendagem de vídeos publicados.
 
-**Flow** Esse time verifica o fluxo de todo o ecossistema Wordpress em todos os dispositivos disponíveis. Testam, documentam e relatam experiências de usuários.
+**Flow** - Esse time verifica o fluxo de todo o ecossistema Wordpress em todos os dispositivos disponíveis. Testam, documentam e relatam experiências de usuários.
 
 
 
@@ -221,8 +214,11 @@ Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista 
 
 
 
-##Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.
+###Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.
+
+
 As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
+
 Para controle de versão são utilizadas  duas ferramentas SVN e o Git.
 Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks, MANP, WAMP, Vgrant ou XAMPP.
 Para automatizar as tarefas é utilizado o GRUNT. 
@@ -234,9 +230,16 @@ Para realizar testes em códigos Javascript é utilizado o framework QUnit, as i
 ##Arquitetura do Wordpress 
 
 Por ser desenvolvido de forma colaborativa por pessoas de todo mundo, uma boa organização de modularização é essencial para o sucesso do Wordpress.
+É importante destacar que a equipe do Wordpress preza por uma organização e entendimento do codigo por todos. 
+As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na pagina oficial da ferramenta. 
 
 O repositório oficial do Wordpress pode ser encontrado em [git://develop.git.wordpress.org][1]. Este repositório é responsável por armazenar todo o trabalho até então desenvolvido. 
+
 O master branch contém a versão alpha da próxima release.
+
+
+
+
 Sugestões de melhorias e soluções de falhas são lançadas como patches. O patch trata de um arquivo de texto que descreve a mudança no código identificando as mudanças que foram realizadas.
 
 
@@ -311,6 +314,11 @@ Um dos fatores que contribuem para o sucesso do Wordpress são os seus mais vari
 #### <i class="icon-file"></i>admin-ajax.php
 > Amostra wp-admin
 
+Os diretorios css e js são responsáveis por estar armazenando os padrões de design a serem utilizados. 
+
+Esse diretório contém diversos arquivos do dashboard do WordPress. Vale lembrar que funções como: escrever posts, moderar comentários e instalar plugins e temas são feitos via dashboard. O acesso a essa área é restrito aos usuários cadastrados e as funcionalidades estão limitadas aos diferentes tipos de usuários: Administrator, Contributor e Subscriber.
+O link para acesso ao dashboard é: http://wpexplorer.com/wp-admin.
+
 
 ###WP-CONTENT
 
@@ -347,27 +355,19 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 >Amostra do wp-includes
 
+###Padrões de código:
 
+Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.
+Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript e podem ser encontrados no endereço abaixo: 
+https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 
-
-
-
-
-
-
-
-
-
-referencias
-
+**Referencias**
 http://www.wpexplorer.com/wordpress-internal-function
-
 https://developer.wordpress.org/themes/basics/template-hierarchy/
-
 https://delftswa.github.io/chapters/joomla/
-
 https://www.optimizesmart.com/wordpress-ninja-15-minutes/
 
 [1]:git://develop.git.wordpress.org
+
 
 
