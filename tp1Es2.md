@@ -33,7 +33,7 @@ A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas d
 
 A organização tem uma parceria com a corporação Automattic, onde Matthew Mullenweg e Ryan Boren, dois dos desenvolvedores primários do WordPress e também outros desenvolvedores do software são funcionários. Outros desenvolvedores importantes são: Mark Jaquith, Andrew Nacin, Andrew Ozz e Peter Westwood.
 
-Dentre os membros da comunidade, existe a classe dos WP testers, um grupo de pessoas que testa os lançamentos voluntariamente. Eles tem acesso aos nightly builds, versões Beta e Release Candidates. Analisando essas versões, eles podem encontrar e reportar erros em uma lista de emails especial, ou na ferramenta Trac (open source e de interface web para controle de mudanças em projetos de desenvolvimento de software) do projeto.
+Dentre os membros da comunidade, existe a classe dos WP testers, um grupo de pessoas que testa os lançamentos voluntariamente. Eles tem acesso aos nightly builds (versão mais recente que reflete as últimas mudanças feitas no código), versões Beta e Release Candidates. Analisando essas versões, eles podem encontrar e reportar erros em uma lista de emails especial, ou na ferramenta Trac (open source e de interface web para controle de mudanças em projetos de desenvolvimento de software) do projeto.
 
 Os times e suas respectivas funções são: 
 
