@@ -1,6 +1,14 @@
 #WORDPRESS
 
+##Índice
 
+1. [Introdução](#introdução)
+2. [Principais desenvolvedores e equipe de desenvolvimento](#principais-desenvolvedores-e-equipe-de-desenvolvimento)
+3. [Evolução do sistema principais releases e novidades de cada uma](#evolução-do-sistema-principais-releases-e-novidades-de-cada-uma)
+4. [Principais frameworks, ferramentas e linguagens usadas no desenvolvimento](#principais-frameworks-ferramentas-e-linguagens-usadas-no-desenvolvimento)
+5. [Arquitetura do Wordpress](#arquitetura-do-wordpress)
+6. [Padrões de código](#padrões-de-código)
+7. [Referências](#referências)
 
 
 ##Introdução
@@ -23,7 +31,10 @@
 
 <p align="justify">A organização tem uma parceria com a corporação Automattic, onde Matthew Mullenweg e Ryan Boren, dois dos desenvolvedores primários do WordPress e também outros desenvolvedores do software são funcionários. Outros desenvolvedores importantes são: Mark Jaquith, Andrew Nacin, Andrew Ozz e Peter Westwood.</p>
 
+
 <p align="justify">Dentre os membros da comunidade, existe a classe dos WP testers, um grupo de pessoas que testa os lançamentos voluntariamente. Eles tem acesso aos nightly builds, versões Beta e Release Candidates. Analisando essas versões, eles podem encontrar e reportar erros em uma lista de emails especial, ou na ferramenta Trac (open source e de interface web para controle de mudanças em projetos de desenvolvimento de software) do projeto.</p>
+
+
 
 Os times e suas respectivas funções são: 
 
@@ -212,12 +223,22 @@ Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista 
 **Descrição** - Agora tanto os plugins e temas podem ser instalados, atualizados ou excluídos sem recarregar a página. O painel do WordPress agora aproveita as fontes que o usuário já tem, tornando o carregamento mais rápido. O editor verifica automaticamente erros acidentais nos links criados pelo usuário e também salva no navegador tudo que é digitado, permitindo recuperação a qualquer momento.
 
 
+
 ###Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.
 
 
 <p align="justify">As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.</p>
 
 <p align="justify">Para controle de versão são utilizadas  duas ferramentas SVN e o Git.</p>
+
+
+Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: 
+
+- MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.
+- WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.
+- Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
+- XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X.
+
 
 <p align="justify">Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks, MANP, WAMP, Vgrant ou XAMPP.</p>
 
@@ -361,6 +382,9 @@ https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 </p>
 
 **Referências**
+
+
+
 
 http://www.wpexplorer.com/wordpress-internal-function
 
