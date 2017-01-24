@@ -236,9 +236,45 @@ Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks:
 - Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
 - XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X.
 
-Para automatizar as tarefas é utilizado o GRUNT. 
-Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.
-Para realizar testes em códigos Javascript é utilizado o framework QUnit, as informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.
+Para automatizar as tarefas como minificação e concatenação de arquivos, deploy, dentre outras que, na maioria das vezes são tarefas em aplicações Javascript é utilizado o GRUNT, uma aplicação de linha de comando que basicamente escreve as tarefas em JavaScript utilizando Node.Js. Para utilizar o Grunt em um projeto, é necessário que exista dois arquivos: o Gruntfile.js e o package.json. Eles devem estar na raiz (diretório principal, root) do projeto.
+
+Caso o projeto já utilize o Grunt (isto é, exista os arquivos Gruntfile.js e package.json), para rodar é bem simples. Segue um exemplo de criação do Grunt em um sistema Linux:
+
+// Acesse a pasta do projeto
+cd project-folder
+ 
+// Instale as dependências
+sudo npm install
+ 
+// Rode o Grunt
+grunt
+
+Para iniciar um projeto com o Grunt existem algumas opções: Pode-se optar pelo grunt-init que gera o scaffolding para alguns modelos de aplicações, como:
+
+ jquery: cria um projeto para um plugin jQuery
+ commonjs: cria um projeto para um módulo commonjs
+ Gruntfile: cria um arquivo Gruntfile.js básico
+ gruntplugin: cria um plugin grunt
+ node: cria um módulo Node.JS
+Você também pode baixar outros templates, além dos oficiais. Para criar um projeto a partir de um dos template como os descritos acima basta usar o comando:
+
+grunt-init
+Ou então iniciar o Grunt sem um template, criando os arquivos manualmente.
+Antes, é necessário saber para que serve esses dois arquivos.
+
+- Gruntfile.js: Esse é um arquivo JavaScript que são definidas e configuradas as tarefas a serem executadas pelo Grunt.
+- package.json: Esse arquivo é usado pelo npm para armazenar as informações da aplicação, dados como nome, autor, repositório e dependências, e é por isso que o grunt precisa dele, para instalar as dependências e os plugins do grunt que seu projeto irá utilizar. Ao rodar o comando npm install, ele procura as dependências descritas nessa arquivo, e instala na pasta do projeto as mesmas com suas respectivas versões.
+
+Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. Ele provê um ecossistema para a execução de testes unitários de forma automatizada. O PHPUnlt segue os princípios do TDD (Test driven development), ou desenvolvimento de software orientado a testes. Esse desenvolvimento se baseia em 3 passos, vermelho-verde-refatora:
+
+O vermelho é a escrita do primeiro teste antes mesmo da lógica existir. 
+O verde é o ponto em que a lógica para que o teste previamente criado passe. Esta lógica deve ser desenvolvida da forma mais simples possível eliminando complexidades desnecessárias fazendo com que a evolução do código ocorra de forma segura. 
+O refatora é a melhoria do código. Neste ponto são removidas duplicações, múltiplas responsabilidades e o código fica cada vez mais próximo de sua versão final.
+As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.
+ 
+O QUnit é um framework utilizado para realizar testes em códigos Javascript, principalmente o projeto jQuery e plugins. Esta ferramenta é realmente simples de usar. Basicamente é preciso apenas incluir os arquivos qunit.js e qunit.css e ter uma estrutura básica de HTML para que a biblioteca funcione corretamente. 
+As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.
+
 
 
 
@@ -382,6 +418,10 @@ http://www.wpexplorer.com/wordpress-internal-function
 https://developer.wordpress.org/themes/basics/template-hierarchy/
 https://delftswa.github.io/chapters/joomla/
 https://www.optimizesmart.com/wordpress-ninja-15-minutes/
+https://tableless.com.br/grunt-voce-deveria-estar-usando/
+https://tableless.com.br/phpunit-como-iniciar-sem-dores/
+https://tableless.com.br/tdd-por-que-usar/
+https://d2mm.wordpress.com/2010/12/22/qunit-para-jquery/
 
 [1]:git://develop.git.wordpress.org
 
