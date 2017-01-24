@@ -1,4 +1,4 @@
-<p align = "justify">
+
 #WORDPRESS
 
 ##Índice
@@ -16,25 +16,25 @@
 ##Introdução
 
 
-O Wordpress é uma plataforma semântica para publicação pessoal, focada na estética, nos padrões Web e na usabilidade. Foi produzido e vem sendo atualizado por colaboradores de todo o mundo. O wordpress tem o propósito de facilitar ao usuário a publicação de conteúdo web e é o maior CMS (Content Management System ou Sistema de Gerenciamento de Conteúdo) do mundo, com cerca de 70% do mercado.
+<p align = "justify">O Wordpress é uma plataforma semântica para publicação pessoal, focada na estética, nos padrões Web e na usabilidade. Foi produzido e vem sendo atualizado por colaboradores de todo o mundo. O wordpress tem o propósito de facilitar ao usuário a publicação de conteúdo web e é o maior CMS (Content Management System ou Sistema de Gerenciamento de Conteúdo) do mundo, com cerca de 70% do mercado. <\p>
 
-A linguagem PHP é a mais utilizada no desenvolvimento do sistema back-end. As linguagens Javascript, HTML e CSS são utilizadas para as soluções front-end.
+<p align = "justify">A linguagem PHP é a mais utilizada no desenvolvimento do sistema back-end. As linguagens Javascript, HTML e CSS são utilizadas para as soluções front-end. <\p>
 
-Wordpress é fácil de ser instalado e segundo o site do sistema a sua instalação leva cerca de 5 minutos para ser concluida. As suas atualizações são simples e podem ser realizadas automaticamente a partir das versões mais recentes.
+<p align = "justify">Wordpress é fácil de ser instalado e segundo o site do sistema a sua instalação leva cerca de 5 minutos para ser concluida. As suas atualizações são simples e podem ser realizadas automaticamente a partir das versões mais recentes. <\p>
 
-Os recursos nativos do Wordpress foram produzidos para tornar a experiência de publicação do usuário simples e agradável. O Wordpress é dotado de sistema de temas, API para a criação de plugins dentre outras coisas.
+<p align = "justify">Os recursos nativos do Wordpress foram produzidos para tornar a experiência de publicação do usuário simples e agradável. O Wordpress é dotado de sistema de temas, API para a criação de plugins dentre outras coisas. <\p>
 
-O usuário ao utilizar o Wordpress poderá personalizar a aparência do seu site utilizando XHTML e CSS. Também é dado a liberdade para que o usuário crie seu próprio tema. Além disso, o usuário tem a liberdade de escrever e utilizar os seus próprios plugins em PHP. 
-O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. 
+<p align = "justify">O usuário ao utilizar o Wordpress poderá personalizar a aparência do seu site utilizando XHTML e CSS. Também é dado a liberdade para que o usuário crie seu próprio tema. Além disso, o usuário tem a liberdade de escrever e utilizar os seus próprios plugins em PHP. 
+O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente.  <\p>
 
 ## Principais desenvolvedores e equipe de desenvolvimento
 
 
-A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade. 
+<p align = "justify">A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade.  <\p>
 
-A organização tem uma parceria com a corporação Automattic, onde Matthew Mullenweg e Ryan Boren, dois dos desenvolvedores primários do WordPress e também outros desenvolvedores do software são funcionários. Outros desenvolvedores importantes são: Mark Jaquith, Andrew Nacin, Andrew Ozz e Peter Westwood.
+<p align = "justify">A organização tem uma parceria com a corporação Automattic, onde Matthew Mullenweg e Ryan Boren, dois dos desenvolvedores primários do WordPress e também outros desenvolvedores do software são funcionários. Outros desenvolvedores importantes são: Mark Jaquith, Andrew Nacin, Andrew Ozz e Peter Westwood. <\p>
 
-Dentre os membros da comunidade, existe a classe dos WP testers, um grupo de pessoas que testa os lançamentos voluntariamente. Eles tem acesso aos nightly builds (versão mais recente que reflete as últimas mudanças feitas no código), versões Beta e Release Candidates. Analisando essas versões, eles podem encontrar e reportar erros em uma lista de emails especial, ou na ferramenta Trac (open source e de interface web para controle de mudanças em projetos de desenvolvimento de software) do projeto.
+<p align = "justify">Dentre os membros da comunidade, existe a classe dos WP testers, um grupo de pessoas que testa os lançamentos voluntariamente. Eles tem acesso aos nightly builds (versão mais recente que reflete as últimas mudanças feitas no código), versões Beta e Release Candidates. Analisando essas versões, eles podem encontrar e reportar erros em uma lista de emails especial, ou na ferramenta Trac (open source e de interface web para controle de mudanças em projetos de desenvolvimento de software) do projeto. <\p>
 
 Os times e suas respectivas funções são: 
 
@@ -72,8 +72,8 @@ Os times e suas respectivas funções são:
 
 ##Evolução do sistema principais releases e novidades de cada uma.
 
-b2 / Cafelog, mais comumente conhecido como B2 ou Cafelog foi o precursor do WordPress. Estima-se que esse gerenciador de conteúdos foi instalado em mais de 2 mil blogs. Ele foi escrito em PHP para uso com o MySQL por Michel Valdrighi, que agora é um desenvolvedor contribuindo para WordPress. O Wordpress apareceu pela primeira vez em 2003 como um esforço conjunto entre Matt Mullenweg e Mike Little para criar um fork do b2. Foi o amigo de  Mullenweg, Christine Selleck Tremoulet, quem sugeriu o nome WordPress
-Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista de jazz e a seguir são relatadas as principais releases.
+<p align = "justify">b2 / Cafelog, mais comumente conhecido como B2 ou Cafelog foi o precursor do WordPress. Estima-se que esse gerenciador de conteúdos foi instalado em mais de 2 mil blogs. Ele foi escrito em PHP para uso com o MySQL por Michel Valdrighi, que agora é um desenvolvedor contribuindo para WordPress. O Wordpress apareceu pela primeira vez em 2003 como um esforço conjunto entre Matt Mullenweg e Mike Little para criar um fork do b2. Foi o amigo de  Mullenweg, Christine Selleck Tremoulet, quem sugeriu o nome WordPress
+Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista de jazz e a seguir são relatadas as principais releases. <\p>
 
 >**Versão** - 1.0
 **Codinome** - Davis
@@ -236,26 +236,26 @@ Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks:
 - Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
 - XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X.
 
-Para automatizar as tarefas é utilizado o GRUNT. 
-Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.
-Para realizar testes em códigos Javascript é utilizado o framework QUnit, as informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.
+<p align = "justify">Para automatizar as tarefas é utilizado o GRUNT.  <\p>
+<p align = "justify">Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.
+Para realizar testes em códigos Javascript é utilizado o framework QUnit, as informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress. <\p>
 
 
 
 ##Arquitetura do Wordpress 
 
-Por ser desenvolvido de forma colaborativa por pessoas de todo mundo, uma boa organização de modularização é essencial para o sucesso do Wordpress.
+<p align = "justify">Por ser desenvolvido de forma colaborativa por pessoas de todo mundo, uma boa organização de modularização é essencial para o sucesso do Wordpress.
 É importante destacar que a equipe do Wordpress preza por uma organização e entendimento do codigo por todos. 
-As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na pagina oficial da ferramenta. 
+As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na pagina oficial da ferramenta.  <\p>
 
-O repositório oficial do Wordpress pode ser encontrado em [git://develop.git.wordpress.org][1]. Este repositório é responsável por armazenar todo o trabalho até então desenvolvido. 
+<p align = "justify">O repositório oficial do Wordpress pode ser encontrado em [git://develop.git.wordpress.org][1]. Este repositório é responsável por armazenar todo o trabalho até então desenvolvido.  <\p>
 
 O master branch contém a versão alpha da próxima release.
 
 
 
 
-Sugestões de melhorias e soluções de falhas são lançadas como patches. O patch trata de um arquivo de texto que descreve a mudança no código identificando as mudanças que foram realizadas.
+<p align = "justify">Sugestões de melhorias e soluções de falhas são lançadas como patches. O patch trata de um arquivo de texto que descreve a mudança no código identificando as mudanças que foram realizadas. <\p>
 
 
 ```flow
@@ -287,14 +287,14 @@ No git oficial do Wordpress a base de dados principal chamada core fica no diret
 
 
 
-Os três diretórios apresentados e os arquivos listados compõe o diretório raíz de uma instalação padrão do Wordpress. O diretório "wp-admin" contém os arquivos e funções responsáveis pelo dashboard de administração do Wordpress e apenas usuários autenticados no sistema possuem acesso a este diretório. Já o diretório “wp-content” contém os arquivos de upload do usuário e é subdividido em três outros diretório: “themes”, “plugins” e “uploads”. Por fim, “wp-includes” contém todos os arquivos PHP's e classes que são necessárias para as operações do "core" do Wordpress.
+<p align = "justify">Os três diretórios apresentados e os arquivos listados compõe o diretório raíz de uma instalação padrão do Wordpress. O diretório "wp-admin" contém os arquivos e funções responsáveis pelo dashboard de administração do Wordpress e apenas usuários autenticados no sistema possuem acesso a este diretório. Já o diretório “wp-content” contém os arquivos de upload do usuário e é subdividido em três outros diretório: “themes”, “plugins” e “uploads”. Por fim, “wp-includes” contém todos os arquivos PHP's e classes que são necessárias para as operações do "core" do Wordpress. <\p>
 
 
 
 
-A principal tarefa do Wordpress é gerar páginas HTML dinamicamente. Podemos dizer que, para isso, ele usa duas entidades. A primeira delas é o código PHP que é o "núcleo" do Wordpress e a segunda é o banco de dados que equivale a "memória" do Wordpress. Toda informação gerada pelo sistema é armazenada no banco de dados.
+<p align = "justify">A principal tarefa do Wordpress é gerar páginas HTML dinamicamente. Podemos dizer que, para isso, ele usa duas entidades. A primeira delas é o código PHP que é o "núcleo" do Wordpress e a segunda é o banco de dados que equivale a "memória" do Wordpress. Toda informação gerada pelo sistema é armazenada no banco de dados. <\p>
 
-Quando um site Wordpress é visitado ou um post é publicado ou um comentário submetido ou uma busca é feita no sistema, por exemplo, acontece um processo similar que é uma "page request" ou requisição de página e o Wordpress é encarregado das operações internas até a conclusão da requisição. A seguir, apresentamos uma generalização do que ocorre nesse processo.
+<p align = "justify">Quando um site Wordpress é visitado ou um post é publicado ou um comentário submetido ou uma busca é feita no sistema, por exemplo, acontece um processo similar que é uma "page request" ou requisição de página e o Wordpress é encarregado das operações internas até a conclusão da requisição. A seguir, apresentamos uma generalização do que ocorre nesse processo. <\p>
 
 ```sequence
 
@@ -311,11 +311,11 @@ Web Server (PHP)->Web Browser:Pagina Dinamica
 - Então, o código gerado é enviado ao web browser que fez a requisição para que ele exiba o conteúdo para o usuário 
 
 
-O banco de dados utilizado pelo Wordpress armazena apenas informações textuais. Dados não-textuais como imagens, vídeos, documentos, etc, são armazenados no diretório “wp-content”. 
+<p align = "justify">O banco de dados utilizado pelo Wordpress armazena apenas informações textuais. Dados não-textuais como imagens, vídeos, documentos, etc, são armazenados no diretório “wp-content”.  <\p>
 
 
 
-Um dos fatores que contribuem para o sucesso do Wordpress são os seus mais variados temas que podem ser utilizados pelo o usuario, o usuario tambem pode estar alterando estes temas tornando assim a sua experiência muito mais agradável e personalizada. Para permitir que a utilização dos temas seja feita de forma satisfatória é essencial uma boa organização e modularização dos códigos pertinentes a esta função.
+<p align = "justify">Um dos fatores que contribuem para o sucesso do Wordpress são os seus mais variados temas que podem ser utilizados pelo o usuario, o usuario tambem pode estar alterando estes temas tornando assim a sua experiência muito mais agradável e personalizada. Para permitir que a utilização dos temas seja feita de forma satisfatória é essencial uma boa organização e modularização dos códigos pertinentes a esta função. <\p>
 ###WP-ADMIN
 #### <i class="icon-folder-open"></i>css
 #### <i class="icon-folder-open"></i>images
@@ -331,8 +331,8 @@ Um dos fatores que contribuem para o sucesso do Wordpress são os seus mais vari
 
 Os diretorios css e js são responsáveis por estar armazenando os padrões de design a serem utilizados. 
 
-Esse diretório contém diversos arquivos do dashboard do WordPress. Vale lembrar que funções como: escrever posts, moderar comentários e instalar plugins e temas são feitos via dashboard. O acesso a essa área é restrito aos usuários cadastrados e as funcionalidades estão limitadas aos diferentes tipos de usuários: Administrator, Contributor e Subscriber.
-O link para acesso ao dashboard é: http://wpexplorer.com/wp-admin.
+<p align = "justify">Esse diretório contém diversos arquivos do dashboard do WordPress. Vale lembrar que funções como: escrever posts, moderar comentários e instalar plugins e temas são feitos via dashboard. O acesso a essa área é restrito aos usuários cadastrados e as funcionalidades estão limitadas aos diferentes tipos de usuários: Administrator, Contributor e Subscriber.
+O link para acesso ao dashboard é: http://wpexplorer.com/wp-admin. <\p>
 
 
 ###WP-CONTENT
@@ -344,12 +344,12 @@ WP-CONTENT   é dividido em duas pastas principais “plugins” e “themes”.
 #### <i class="icon-file"></i>index.php
 > Amostra WP-CONTENT 
 
- A pasta mais importante é a pasta Themes, lá encontramos os designs desenvolvidos nas mais diferentes versões do Wordpress. Os designs são templates já definidos em temas que são disponíveis para serem utilizados pelo usuário. São desenvolvidos utilizando CSS e PHP. O CSS aqui é explorado com profundidade na busca da construção de um tema que seja interessante e que atenda as expectativas do usuario. Cada versão de temas é salva em um diretório específico. Assim em cada diretório temos uma subdivisão de acordo com o foco principal de um interface, os subdiretórios são denominados de colors, images, inc, js, languages. Colors contém códigos em CSS que definem as propriedades das cores a serem utilizadas no tema. O diretório imagens armazena imagens em formato .png, estas são as imagens que irão caracterizar  o tema que em questão. Outras imagens com o cabeçalho são salvas em formato .jpeg, estas são imagens que irão ilustrar a página com intuito de embelezá-la e a deixar mais agradavel pára o usuario. 
+ <p align = "justify">A pasta mais importante é a pasta Themes, lá encontramos os designs desenvolvidos nas mais diferentes versões do Wordpress. Os designs são templates já definidos em temas que são disponíveis para serem utilizados pelo usuário. São desenvolvidos utilizando CSS e PHP. O CSS aqui é explorado com profundidade na busca da construção de um tema que seja interessante e que atenda as expectativas do usuario. Cada versão de temas é salva em um diretório específico. Assim em cada diretório temos uma subdivisão de acordo com o foco principal de um interface, os subdiretórios são denominados de colors, images, inc, js, languages. Colors contém códigos em CSS que definem as propriedades das cores a serem utilizadas no tema. O diretório imagens armazena imagens em formato .png, estas são as imagens que irão caracterizar  o tema que em questão. Outras imagens com o cabeçalho são salvas em formato .jpeg, estas são imagens que irão ilustrar a página com intuito de embelezá-la e a deixar mais agradavel pára o usuario.  <\p>
 
-Códigos de widgets que são elaborados maioritariamente usando js são armazenados em uma pasta em especifico denominado inc.  Biblioteca js é salva no diretorio js.
+<p align = "justify">Códigos de widgets que são elaborados maioritariamente usando js são armazenados em uma pasta em especifico denominado inc.  Biblioteca js é salva no diretorio js.<\p>
 
-A estrutura é destinada a manter tudo que for relevante para a aparência dos temas de forma organizada. Em algumas versões é definido um diretório para armazenar o código CSS separado. 
-Com esta divisão, temos uma clara intenção da equipe do Wordpress de manter de forma organizada tudo que se destina a formalizar com será exibido o layout do usuario.  Contribuidores de todo o mundo podem facilmente entender como está sendo organizada a parte de temas, bem como sugerir alterações de forma precisa e sem colocar em risco o funcionamento do código. 
+<p align = "justify">A estrutura é destinada a manter tudo que for relevante para a aparência dos temas de forma organizada. Em algumas versões é definido um diretório para armazenar o código CSS separado. <\p>
+<p align = "justify">Com esta divisão, temos uma clara intenção da equipe do Wordpress de manter de forma organizada tudo que se destina a formalizar com será exibido o layout do usuario.  Contribuidores de todo o mundo podem facilmente entender como está sendo organizada a parte de temas, bem como sugerir alterações de forma precisa e sem colocar em risco o funcionamento do código. <\p>
 
 
 
@@ -372,7 +372,7 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 ###Padrões de código:
 
-Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.
+<p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.<\p>
 Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript e podem ser encontrados no endereço abaixo: 
 https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 
@@ -385,5 +385,5 @@ https://www.optimizesmart.com/wordpress-ninja-15-minutes/
 
 [1]:git://develop.git.wordpress.org
 
-<\p>
+
 
