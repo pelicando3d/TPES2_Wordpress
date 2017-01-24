@@ -1,3 +1,4 @@
+<p align = "justify">
 #WORDPRESS
 
 ##Índice
@@ -384,5 +385,5 @@ https://www.optimizesmart.com/wordpress-ninja-15-minutes/
 
 [1]:git://develop.git.wordpress.org
 
-
+<\p>
 
