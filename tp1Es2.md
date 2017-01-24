@@ -228,7 +228,13 @@ Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista 
 As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
 
 Para controle de versão são utilizadas  duas ferramentas SVN e o Git.
-Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks, MANP, WAMP, Vgrant ou XAMPP.
+Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: 
+
+- MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.
+- WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.
+- Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
+- XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X.
+
 Para automatizar as tarefas é utilizado o GRUNT. 
 Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.
 Para realizar testes em códigos Javascript é utilizado o framework QUnit, as informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.
