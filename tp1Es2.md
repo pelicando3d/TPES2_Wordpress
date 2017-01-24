@@ -1,6 +1,14 @@
 #WORDPRESS
 
+##Índice
 
+1. [Introdução](#introdução)
+2. [Principais desenvolvedores e equipe de desenvolvimento](#principais-desenvolvedores-e-equipe-de-desenvolvimento)
+3. [Evolução do sistema principais releases e novidades de cada uma](#evolução-do-sistema-principais-releases-e-novidades-de-cada-uma)
+4. [Principais frameworks, ferramentas e linguagens usadas no desenvolvimento](#principais-frameworks-ferramentas-e-linguagens-usadas-no-desenvolvimento)
+5. [Arquitetura do Wordpress](#arquitetura-do-wordpress)
+6. [Padrões de código](#padrões-de-código)
+7. [Referências](#referências)
 
 
 
@@ -214,7 +222,7 @@ Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista 
 
 
 
-###Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.
+##Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.
 
 
 As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
@@ -361,7 +369,8 @@ Com o propósito de criar uma base para colaboração e revisão dos vários asp
 Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript e podem ser encontrados no endereço abaixo: 
 https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 
-**Referencias**
+##Referências
+
 http://www.wpexplorer.com/wordpress-internal-function
 https://developer.wordpress.org/themes/basics/template-hierarchy/
 https://delftswa.github.io/chapters/joomla/
