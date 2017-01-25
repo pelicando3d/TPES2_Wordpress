@@ -606,7 +606,7 @@ if ( condicao) {
  
 // Diferente de jQuery, WordPress prefere espaço após o operador de negação !
 // Isso também é feito nos padrões de PHP
-
+...
 
 
 ##Referências
