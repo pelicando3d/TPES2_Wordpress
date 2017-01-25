@@ -8,8 +8,9 @@
 3. [Evolução do sistema principais releases e novidades de cada uma](#evolução-do-sistema-principais-releases-e-novidades-de-cada-uma)
 4. [Principais frameworks, ferramentas e linguagens usadas no desenvolvimento](#principais-frameworks-ferramentas-e-linguagens-usadas-no-desenvolvimento)
 5. [Arquitetura do Wordpress](#arquitetura-do-wordpress)
-6. [Padrões de código](#padrões-de-código)
-7. [Referências](#referências)
+6. [Hierarquia dos Arquivos de Template](#hierarquia-dos-arquivos-de-template)
+7. [Padrões de código](#padrões-de-código)
+8. [Referências](#referências)
 
 
 
@@ -425,6 +426,24 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 #### <i class="icon-file"></i>atomlib.php
 
 >Amostra do wp-includes
+
+##Hierarquia dos Arquivos de Template
+
+
+<p align = "justify">WordPress usa a string da query para decidir qual template ou conjunto de templates deve ser usado para exibir a página. A string é a informação que está contida no link para cada parte do seu site. Ela vem após o ponto de interrogação inicial e pode conter um número de parâmetros separados por &.</p>
+
+<p align = "justify">Simplificando, o WordPress pesquisa através da hierarquia de templates até encontrar um arquivo de template correspondente. Para determinar qual arquivo de modelo usar, o WordPress:</p>
+
+- Combina cada string de consulta com um tipo de consulta para decidir qual página está sendo solicitada (por exemplo, uma página de pesquisa, uma página de categoria, etc.);
+- Seleciona o template na ordem determinada pela hierarquia;
+- Procura arquivos de template com nomes específicos no diretório do tema atual e usa o primeiro arquivo de template correspondente conforme especificado pela hierarquia.
+- Com exceção do arquivo de template básico (index.php), você pode escolher se deseja implementar um template específico ou não.
+
+<p align = "justify">Se o WordPress não conseguir encontrar um template com um nome correspondente, ele saltará para o próximo arquivo na hierarquia. Se o WordPress não conseguir encontrar nenhum arquivo de template correspondente, o arquivo index.php do tema será usado.</p>
+
+<p align = "justify">O diagrama a seguir mostra quais arquivos de template são chamados para gerar uma página do WordPress baseado na hierarquia de arquivos.</p>
+
+![hieraquia-de-templat](https://cloud.githubusercontent.com/assets/22482177/22299498/11dda3f8-e303-11e6-93fa-d117c0e96481.png)
 
 ###Padrões de código:
 
