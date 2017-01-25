@@ -452,7 +452,8 @@ https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 - https://tableless.com.br/phpunit-como-iniciar-sem-dores/
 - https://tableless.com.br/tdd-por-que-usar/
 - https://d2mm.wordpress.com/2010/12/22/qunit-para-jquery/
-- [1]:git://develop.git.wordpress.org
+- https://codex.wordpress.org/Database_Description
+- git://develop.git.wordpress.org
 
 
 
