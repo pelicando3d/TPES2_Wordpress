@@ -401,7 +401,7 @@ WP-CONTENT   é dividido em duas pastas principais “plugins” e “themes”.
 
 
 <p align = "justify">Códigos de widgets que são elaborados maioritaO Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
-<\p>
+
 
 <p align = "justify">A estrutura é destinada a manter tudo que for relevante para a aparência dos temas de forma organizada. Em algumas versões é definido um diretório para armazenar o código CSS separado. </p>
 <p align = "justify">Com esta divisão, temos uma clara intenção da equipe do Wordpress de manter de forma organizada tudo que se destina a formalizar com será exibido o layout do usuario.  Contribuidores de todo o mundo podem facilmente entender como está sendo organizada a parte de temas, bem como sugerir alterações de forma precisa e sem colocar em risco o funcionamento do código. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
