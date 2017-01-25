@@ -77,8 +77,8 @@ Os times e suas respectivas funções são:
 
 ##Evolução do sistema principais releases e novidades de cada uma.
 
-<p align = "justify">b2 / Cafelog, mais comumente conhecido como B2 ou Cafelog foi o precursor do WordPress. Estima-se que esse gerenciador de conteúdos foi instalado em mais de 2 mil blogs. Ele foi escrito em PHP para uso com o MySQL por Michel Valdrighi, que agora é um desenvolvedor contribuindo para WordPress. O Wordpress apareceu pela primeira vez em 2003 como um esforço conjunto entre Matt Mullenweg e Mike Little para criar um fork do b2. Foi o amigo de  Mullenweg, Christine Selleck Tremoulet, quem sugeriu o nome WordPress
-Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista de jazz e a seguir são relatadas as principais releases. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+<p align = "justify">b2 / Cafelog, mais comumente conhecido como B2 ou Cafelog foi o precursor do WordPress. Estima-se que esse gerenciador de conteúdos foi instalado em mais de 2 mil blogs. Ele foi escrito em PHP para uso com o MySQL por Michel Valdrighi, que agora é um desenvolvedor contribuindo para WordPress. O Wordpress apareceu pela primeira vez em 2003 como um esforço conjunto entre Matt Mullenweg e Mike Little para criar um fork do b2. Foi o amigo de  Mullenweg, Christine Selleck Tremoulet, quem sugeriu o nome WordPress</p>
+<p align = "justify">Desde a versão 1.0 todas as versões do Wordpress tem o codinome de um artista de jazz e a seguir são relatadas as principais releases. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
 
 >**Versão** - 1.0
@@ -256,7 +256,7 @@ sudo npm install
 // Rode o Grunt
 grunt
 <p align = "justify">
-Para iniciar um projeto com o Grunt existem algumas opções: Pode-se optar pelo grunt-init que gera o scaffolding para alguns modelos de aplicações, como:
+Para iniciar um projeto com o Grunt existem algumas opções: Pode-se optar pelo grunt-init que gera o scaffolding para alguns modelos de aplicações, como:</p>
 
  jquery: cria um projeto para um plugin jQuery
  commonjs: cria um projeto para um módulo commonjs
@@ -268,7 +268,7 @@ Você também pode baixar outros templates, além dos oficiais. Para criar um pr
 grunt-init
 Ou então iniciar o Grunt sem um template, criando os arquivos manualmente.
 Antes, é necessário saber para que serve esses dois arquivos.
-</p>
+
 
 - Gruntfile.js: Esse é um arquivo JavaScript que são definidas e configuradas as tarefas a serem executadas pelo Grunt.
 - package.json: Esse arquivo é usado pelo npm para armazenar as informações da aplicação, dados como nome, autor, repositório e dependências, e é por isso que o grunt precisa dele, para instalar as dependências e os plugins do grunt que seu projeto irá utilizar. Ao rodar o comando npm install, ele procura as dependências descritas nessa arquivo, e instala na pasta do projeto as mesmas com suas respectivas versões.
@@ -276,12 +276,12 @@ Antes, é necessário saber para que serve esses dois arquivos.
 <p align = "justify">Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. Ele provê um ecossistema para a execução de testes unitários de forma automatizada. O PHPUnlt segue os princípios do TDD (Test driven development), ou desenvolvimento de software orientado a testes. Esse desenvolvimento se baseia em 3 passos, vermelho-verde-refatora:</p>
 
 <p align = "justify">O vermelho é a escrita do primeiro teste antes mesmo da lógica existir. </p>
-<p align = "justify">O verde é o ponto em que a lógica para que o teste previamente criado passe. Esta lógica deve ser desenvolvida da forma mais simples possível eliminando complexidades desnecessárias fazendo com que a evolução do código ocorra de forma segura. 
-O refatora é a melhoria do código. Neste ponto são removidas duplicações, múltiplas responsabilidades e o código fica cada vez mais próximo de sua versão final.
-As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.</p>
+<p align = "justify">O verde é o ponto em que a lógica para que o teste previamente criado passe. Esta lógica deve ser desenvolvida da forma mais simples possível eliminando complexidades desnecessárias fazendo com que a evolução do código ocorra de forma segura.</p>
+<p align = "justify">O refatora é a melhoria do código. Neste ponto são removidas duplicações, múltiplas responsabilidades e o código fica cada vez mais próximo de sua versão final.</p>
+<p align = "justify">As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.</p>
  
-<p align = "justify">O QUnit é um framework utilizado para realizar testes em códigos Javascript, principalmente o projeto jQuery e plugins. Esta ferramenta é realmente simples de usar. Basicamente é preciso apenas incluir os arquivos qunit.js e qunit.css e ter uma estrutura básica de HTML para que a biblioteca funcione corretamente. 
-As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.</p>
+<p align = "justify">O QUnit é um framework utilizado para realizar testes em códigos Javascript, principalmente o projeto jQuery e plugins. Esta ferramenta é realmente simples de usar. Basicamente é preciso apenas incluir os arquivos qunit.js e qunit.css e ter uma estrutura básica de HTML para que a biblioteca funcione corretamente. </p>
+<p align = "justify">As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.</p>
 
 
 
@@ -289,9 +289,9 @@ As informações sobre a instalação e utilização do mesmo também podem ser 
 
 ##Arquitetura do Wordpress 
 
-<p align = "justify">Por ser desenvolvido de forma colaborativa por pessoas de todo mundo, uma boa organização de modularização é essencial para o sucesso do Wordpress.
-É importante destacar que a equipe do Wordpress preza por uma organização e entendimento do codigo por todos. 
-As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na pagina oficial da ferramenta.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+<p align = "justify">Por ser desenvolvido de forma colaborativa por pessoas de todo mundo, uma boa organização de modularização é essencial para o sucesso do Wordpress.</p>
+<p align = "justify">É importante destacar que a equipe do Wordpress preza por uma organização e entendimento do codigo por todos. </p>
+<p align = "justify">As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na pagina oficial da ferramenta.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
 
 <p align = "justify">O repositório oficial do Wordpress pode ser encontrado em [git://develop.git.wordpress.org][1]. Este repositório é responsável por armazenar todo o trabalho até então desenvolvido. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
