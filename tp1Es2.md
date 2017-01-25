@@ -383,8 +383,8 @@ Web Server (PHP)->Web Browser:Pagina Dinamica
 
 Os diretorios css e js são responsáveis por estar armazenando os padrões de design a serem utilizados. 
 
-<p align = "justify">Esse diretório contém diversos arquivos do dashboard do WordPress. Vale lembrar que funções como: escrever posts, moderar comentários e instalar plugins e temas são feitos via dashboard. O acesso a essa área é restrito aos usuários cadastrados e as funcionalidades estão limitadas aos diferentes tipos de usuários: Administrator, Contributor e Subscriber.
-O link para acesso ao dashboard é: http://wpexplorer.com/wp-admin. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+<p align = "justify">Esse diretório contém diversos arquivos do dashboard do WordPress. Vale lembrar que funções como: escrever posts, moderar comentários e instalar plugins e temas são feitos via dashboard. O acesso a essa área é restrito aos usuários cadastrados e as funcionalidades estão limitadas aos diferentes tipos de usuários: Administrator, Contributor e Subscriber.</p>
+<p align = "justify">O link para acesso ao dashboard é: http://wpexplorer.com/wp-admin. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
 
 
@@ -403,7 +403,7 @@ WP-CONTENT   é dividido em duas pastas principais “plugins” e “themes”.
 <p align = "justify">Códigos de widgets que são elaborados maioritaO Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 <\p>
 
-<p align = "justify">A estrutura é destinada a manter tudo que for relevante para a aparência dos temas de forma organizada. Em algumas versões é definido um diretório para armazenar o código CSS separado. <\p>
+<p align = "justify">A estrutura é destinada a manter tudo que for relevante para a aparência dos temas de forma organizada. Em algumas versões é definido um diretório para armazenar o código CSS separado. </p>
 <p align = "justify">Com esta divisão, temos uma clara intenção da equipe do Wordpress de manter de forma organizada tudo que se destina a formalizar com será exibido o layout do usuario.  Contribuidores de todo o mundo podem facilmente entender como está sendo organizada a parte de temas, bem como sugerir alterações de forma precisa e sem colocar em risco o funcionamento do código. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
 
