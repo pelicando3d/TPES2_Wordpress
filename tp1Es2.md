@@ -28,7 +28,7 @@
 <p align = "justify">O usuário ao utilizar o Wordpress poderá personalizar a aparência do seu site utilizando XHTML e CSS. Também é dado a liberdade para que o usuário crie seu próprio tema. Além disso, o usuário tem a liberdade de escrever e utilizar os seus próprios plugins em PHP. 
 O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
-## Principais desenvolvedores e equipe de desenvolvimento
+##Principais desenvolvedores e equipe de desenvolvimento
 
 
 <p align = "justify">A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
