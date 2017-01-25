@@ -437,10 +437,10 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 
 ##Padrões de código:
-  		  
-  <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>		  <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
-  		  
-Existem padrões definidos para as linguagens:  PHP, HTML, CSS e Javascript:
+ 
+ <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>	<p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+ 
+Existem padrões definidos para as linguagens: PHP, HTML, CSS e Javascript:
  
 ###PHP
 ####Identação:
@@ -462,7 +462,7 @@ Incorrect:
 &lt?= $var ?></code></pre>
 
 ####Nomeclaturas:
-* Usar letras em lowercase  para variáveis, ações e nomes funções. Usar "_" como separador de palavras. 
+* Usar letras em lowercase para variáveis, ações e nomes funções. Usar "_" como separador de palavras. 
 * Não abreviar nomes desnecessáriamente
 <pre class="prettyprint">
 <code class="lang-bsh">function some_name( $some_variable ) { [...] }</code></pre>
@@ -489,32 +489,32 @@ Para humanos
 </code></pre>
 
 ####Identação:
-Assim como PHP,  a identação do HTML sempre precisa refletir a estrutura do código.
+Assim como PHP, a identação do HTML sempre precisa refletir a estrutura do código.
 
 Correto
 <pre class="prettyprint">
 <code class="lang-bsh">&lt?php if ( ! have_posts() ) : ?>
-    &ltdiv id="post-1" class="post">
-        &lth1 class="entry-title">Not Found&lt/h1>
-        &ltdiv class="entry-content">
-            &ltp>Apologies, but no results were found.&lt/p>
-            &lt?php get_search_form(); ?>
-        &lt/div>
-    &lt/div>
+ &ltdiv id="post-1" class="post">
+ &lth1 class="entry-title">Not Found&lt/h1>
+ &ltdiv class="entry-content">
+ &ltp>Apologies, but no results were found.&lt/p>
+ &lt?php get_search_form(); ?>
+ &lt/div>
+ &lt/div>
 &lt?php endif; ?>
 
 </code></pre> 
 
 Incorreto
 <pre class="prettyprint">
-<code class="lang-bsh">        &lt?php if ( ! have_posts() ) : ?>
-        &ltdiv id="post-0" class="post error404 not-found">
-            &lth1 class="entry-title">Not Found&lt/h1>
-            &ltdiv class="entry-content">
-            &ltp>Apologies, but no results were found.&lt/p>
+<code class="lang-bsh"> &lt?php if ( ! have_posts() ) : ?>
+ &ltdiv id="post-0" class="post error404 not-found">
+ &lth1 class="entry-title">Not Found&lt/h1>
+ &ltdiv class="entry-content">
+ &ltp>Apologies, but no results were found.&lt/p>
 &lt?php get_search_form(); ?>
-            &lt/div>
-        &lt/div>
+ &lt/div>
+ &lt/div>
 &lt?php endif; ?>
 </code></pre>
 
@@ -525,15 +525,15 @@ Incorreto
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1,
 &#x23;selector-2,
 &#x23;selector-3 {
- 		background: #fff;
- 		color: #000;
+ background: #fff;
+ color: #000;
 }</code></pre>
 
 Incorreto:
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1, &#x23;selector-2, &#x23;selector-3 {
- 		background: #fff;
- 		color: #000;
- 		}
+ background: #fff;
+ color: #000;
+ }
  
 &#x23;selector-1 { background: #fff; color: #000; 6 }</code></pre>
 ####Propriedades:
@@ -541,18 +541,18 @@ Incorreto:
  Correto:
  
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
- 		background: &#x23;fff;
- 		display: block;
- 		margin: 0;
- 		margin-left: 20px;
+ background: &#x23;fff;
+ display: block;
+ margin: 0;
+ margin-left: 20px;
 }</code></pre>
  
  Incorreto:
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
- 		background:&#x23;FFFFFF;
- 		display: BLOCK;
- 		margin-left: 20PX;
- 		margin: 0;
+ background:&#x23;FFFFFF;
+ display: BLOCK;
+ margin-left: 20PX;
+ margin: 0;
 }</code></pre>
  
 ####Valores:
@@ -560,30 +560,30 @@ Incorreto:
  Correto:
  
 <pre class="prettyprint"> <code class="lang-bsh">.class { /* Correct usage of quotes */
- 		background-image: url(images/bg.png);
- 		font-family: "Helvetica Neue", sans-serif;
- 		font-weight: 700;
+ background-image: url(images/bg.png);
+ font-family: "Helvetica Neue", sans-serif;
+ font-weight: 700;
  }
-  
+ 
  .class { /* Correct usage of zero values */
- 		font-family: Georgia, serif;
- 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
- 		0 1px 0 &#x23;fff;
+ font-family: Georgia, serif;
+ text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
+ 0 1px 0 &#x23;fff;
  }
 </code></pre>
  
  Incorreto:
  <pre class="prettyprint"> <code class="lang-bsh">.class { /* Avoid missing space and semicolon */
- 		background:#fff
+ background:#fff
  }
-  
+ 
  .class { /* Avoid adding a unit on a zero value */
- 		margin: 0px 0px 20px 0px;
+ margin: 0px 0px 20px 0px;
  }
-  
+ 
  .class {
- 		font-family: Times New Roman, serif; /* Quote font names when required */
- 		font-weight: bold; /* Avoid named font weights */
+ font-family: Times New Roman, serif; /* Quote font names when required */
+ font-weight: bold; /* Avoid named font weights */
  }</code></pre>
  
  
@@ -594,19 +594,76 @@ Incorreto:
 <code class="lang-bsh">var i;
  
 if ( condicao) {
-    facaAlgo( 'com uma string' );
+ facaAlgo( 'com uma string' );
 } else if ( outraCondicao) {
-    outraCoisa({
-        chave: valor,
-        outraChave: outroValor
-    });
+ outraCoisa({
+ chave: valor,
+ outraChave: outroValor
+ });
 } else {
-    algumaOutraCoisa( true );
+ algumaOutraCoisa( true );
 }
  
 // Diferente de jQuery, WordPress prefere espaço após o operador de negação !
 // Isso também é feito nos padrões de PHP
-...
+while ( ! condicao) {
+ iterando++;
+}
+ 
+for ( i = 0; i &lt 100; i++ ) {
+ object[ array[ i ] ] = funcao( i );
+ $( '.container' ).val( array[ i ] );
+}
+ 
+try {
+ // expressões
+} catch ( e ) {
+ // expressões
+}</code></pre>
+
+####Arrays:
+A criação de arrays em JavaScript deve ser feita com o construtor reduzido "[]" ao invés da notação new Array()
+
+<pre class="prettyprint">
+<code class="lang-bsh">var myArray = [];</code></pre>
+Pode-se inicializar arrays durante a construção
+
+<pre class="prettyprint">
+<code class="lang-bsh">var myArray = [ 1, 'WordPress', 2, 'Blog' ];</code></pre>
+Em JavaScript, arrays associativos são definidos como objetos.
+
+####Objetos:
+Criação dos objetos
+<pre class="prettyprint">
+<code class="lang-bsh">var meuObj= {};
+//ou
+var meuObj= new MétodoConstrutor();</code></pre>
+Quanto as propriedades dos objetos:
+<pre class="prettyprint">
+<code class="lang-bsh">prop = object.nomeDaPropriedade;
+prop = object[ variávelChave ];
+prop = object['padrão'];
+prop = object['chave-com-hiféns'];</code></pre>
+
+####Iterações:
+<pre class="prettyprint">
+<code class="lang-bsh">var i;
+// Bom e eficiente
+var i, max;
+ 
+// getItemCount() tem uma chamada apenas
+for ( i = 0, max = getItemCount(); i &lt max; i++ ) {
+ // faz algo
+}
+ 
+// Ruim e potencialmente ineficiente
+// getItemCount() é chamado a cada iteração
+for ( i = 0; i &lt getItemCount(); i++ ) {
+ // faz algo
+}</code></pre>
+
+####JSHint:
+<p align = "justify">JSHint é uma ferramenta de qualidade de código automatizada, escrita para capturar erros no código JavaScript. É utilizado no desenvolvimento do WordPress para verificar rapidamente se algum patch não introduziu nenhum erro de sintaxe ou de lógica no front-end.</p>
 
 
 ##Referências
