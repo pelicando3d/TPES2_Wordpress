@@ -237,41 +237,48 @@ As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
 Para controle de versão são utilizadas  duas ferramentas SVN e o Git.
 Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: 
 <p align = "justify">
-- MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.
-- WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.
-- Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
+- MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.</p>
+<p align = "justify">
+- WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.</p>
+<p align = "justify">
+- Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.</p>
+<p align = "justify">
 - XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X. </p>
 
 <p align = "justify">
 Para automatizar as tarefas como minificação e concatenação de arquivos, deploy, dentre outras que, na maioria das vezes são tarefas em aplicações Javascript é utilizado o GRUNT, uma aplicação de linha de comando que basicamente escreve as tarefas em JavaScript utilizando Node.Js. Para utilizar o Grunt em um projeto, é necessário que exista dois arquivos: o Gruntfile.js e o package.json. Eles devem estar na raiz (diretório principal, root) do projeto.</p>
+<p align = "justify">
+Caso o projeto já utilize o Grunt (isto é, exista os arquivos Gruntfile.js e package.json), para rodar é bem simples. Segue um exemplo de criação do Grunt em um sistema Linux:</p>
 
-Caso o projeto já utilize o Grunt (isto é, exista os arquivos Gruntfile.js e package.json), para rodar é bem simples. Segue um exemplo de criação do Grunt em um sistema Linux:
+>// Acesse a pasta do projeto
+>cd project-folder
+ 
+>// Instale as dependências
+>sudo npm install
+ 
+>// Rode o Grunt
+>grunt
 
-// Acesse a pasta do projeto
-cd project-folder
- 
-// Instale as dependências
-sudo npm install
- 
-// Rode o Grunt
-grunt
 <p align = "justify">
 Para iniciar um projeto com o Grunt existem algumas opções: Pode-se optar pelo grunt-init que gera o scaffolding para alguns modelos de aplicações, como:</p>
 
- jquery: cria um projeto para um plugin jQuery
- commonjs: cria um projeto para um módulo commonjs
- Gruntfile: cria um arquivo Gruntfile.js básico
- gruntplugin: cria um plugin grunt
- node: cria um módulo Node.JS
-Você também pode baixar outros templates, além dos oficiais. Para criar um projeto a partir de um dos template como os descritos acima basta usar o comando:
+- jquery: cria um projeto para um plugin jQuery
+- commonjs: cria um projeto para um módulo commonjs
+- Gruntfile: cria um arquivo Gruntfile.js básico
+- gruntplugin: cria um plugin grunt
+- node: cria um módulo Node.JS
+<p align = "justify">
+Você também pode baixar outros templates, além dos oficiais. Para criar um projeto a partir de um dos template como os descritos acima basta usar o comando:</p>
 
-grunt-init
-Ou então iniciar o Grunt sem um template, criando os arquivos manualmente.
-Antes, é necessário saber para que serve esses dois arquivos.
+>grunt-init
 
+<p align = "justify">
+Ou então iniciar o Grunt sem um template, criando os arquivos manualmente. Antes, é necessário saber para que serve esses dois arquivos.</p>
 
-- Gruntfile.js: Esse é um arquivo JavaScript que são definidas e configuradas as tarefas a serem executadas pelo Grunt.
-- package.json: Esse arquivo é usado pelo npm para armazenar as informações da aplicação, dados como nome, autor, repositório e dependências, e é por isso que o grunt precisa dele, para instalar as dependências e os plugins do grunt que seu projeto irá utilizar. Ao rodar o comando npm install, ele procura as dependências descritas nessa arquivo, e instala na pasta do projeto as mesmas com suas respectivas versões.
+<p align = "justify">
+- Gruntfile.js: Esse é um arquivo JavaScript que são definidas e configuradas as tarefas a serem executadas pelo Grunt.</p>
+<p align = "justify">
+- package.json: Esse arquivo é usado pelo npm para armazenar as informações da aplicação, dados como nome, autor, repositório e dependências, e é por isso que o grunt precisa dele, para instalar as dependências e os plugins do grunt que seu projeto irá utilizar. Ao rodar o comando npm install, ele procura as dependências descritas nessa arquivo, e instala na pasta do projeto as mesmas com suas respectivas versões.</p>
 
 <p align = "justify">Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. Ele provê um ecossistema para a execução de testes unitários de forma automatizada. O PHPUnlt segue os princípios do TDD (Test driven development), ou desenvolvimento de software orientado a testes. Esse desenvolvimento se baseia em 3 passos, vermelho-verde-refatora:</p>
 
@@ -430,7 +437,86 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
-Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript e podem ser encontrados no endereço abaixo: 
+Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript:
+####CSS
+#####Estrutura
+Correto:
+<pre class="prettyprint">
+<code class="lang-bsh">#selector-1,
+#selector-2,
+#selector-3 {
+		background: #fff;
+		color: #000;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint">
+<code class="lang-bsh">
+#selector-1, selector-2, selector-3 {
+		background: #fff;
+		color: #000;
+		}
+
+#selector-1 { background: #fff; color: #000; 6 }</code></pre>
+
+#####Propriedades
+
+Correto:
+
+<pre class="prettyprint">
+<code class="lang-bsh">#selector-1 {
+		background: #fff;
+		display: block;
+		margin: 0;
+		margin-left: 20px;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint">
+<code class="lang-bsh">#selector-1 {
+		background:#FFFFFF;
+		display: BLOCK;
+		margin-left: 20PX;
+		margin: 0;
+}</code></pre>
+
+#####Valores
+
+Correto:
+
+<pre class="prettyprint">
+<code class="lang-bsh">.class { /* Correct usage of quotes */
+		background-image: url(images/bg.png);
+		font-family: "Helvetica Neue", sans-serif;
+		font-weight: 700;
+}
+ 
+.class { /* Correct usage of zero values */
+		font-family: Georgia, serif;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
+		0 1px 0 #fff;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint">
+<code class="lang-bsh">.class { /* Avoid missing space and semicolon */
+		background:#fff
+}
+ 
+.class { /* Avoid adding a unit on a zero value */
+		margin: 0px 0px 20px 0px;
+}
+ 
+.class {
+		font-family: Times New Roman, serif; /* Quote font names when required */
+		font-weight: bold; /* Avoid named font weights */
+}</code></pre>
+
+
+####HTML
+####PHP
+####Javascript: 
+A lista completa dos padrões utilizados pode ser encontrada no endereço abaixo: 
 https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 
 ##Referências
