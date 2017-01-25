@@ -306,17 +306,7 @@ O master branch contém a versão alpha da próxima release.
 
 
 
-```flow
-st=>start: Start
-e=>end
-op=>operation: Bug encontrado
-cond=>condition: Falha corrigida
-op2=>operation: Criar Patch
-st->op->cond
-cond(yes)->op2
-op2->e
-
-```
+![fluxo](https://cloud.githubusercontent.com/assets/22482177/22301063/5779a47a-e308-11e6-8bef-e86e71a16983.png)
 >Exemplo de um fluxo seguido para a criação de um patch
 
 
@@ -346,15 +336,8 @@ No git oficial do Wordpress a base de dados principal chamada core fica no diret
 
 <p align = "justify">Quando um site Wordpress é visitado ou um post é publicado ou um comentário submetido ou uma busca é feita no sistema, por exemplo, acontece um processo similar que é uma "page request" ou requisição de página e o Wordpress é encarregado das operações internas até a conclusão da requisição. A seguir, apresentamos uma generalização do que ocorre nesse processo.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
+![requisicao](https://cloud.githubusercontent.com/assets/22482177/22301686/a26e9402-e30a-11e6-8310-c68cbec136f1.png)
 
-```sequence
-
-Web Browser->Wordpress (PHP): Requisição de pagina
-Wordpress (PHP)->Web Server (PHP): 
-MySQL->Web Server (PHP):Dados
-Web Server (PHP)->Web Browser:Pagina Dinamica
-
-```
 >- Navegador do usuário requisita uma página
 - Wordpress chama a página PHP requisitada a partir da página index.php
 - O “núcleo”, então, comunica com a “memória” e recupera os dados necessários (posts/páginas/comentários/etc.)
