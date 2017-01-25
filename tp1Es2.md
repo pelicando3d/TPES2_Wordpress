@@ -8,6 +8,7 @@
 3. [Evolução do sistema principais releases e novidades de cada uma](#evolução-do-sistema-principais-releases-e-novidades-de-cada-uma)
 4. [Principais frameworks, ferramentas e linguagens usadas no desenvolvimento](#principais-frameworks-ferramentas-e-linguagens-usadas-no-desenvolvimento)
 5. [Arquitetura do Wordpress](#arquitetura-do-wordpress)
+6. [Diagrama do banco de Dados](#diagrama-do-banco-de-dados)
 6. [Hierarquia dos Arquivos de Template](#hierarquia-dos-arquivos-de-template)
 7. [Padrões de código](#padrões-de-código)
 8. [Referências](#referências)
@@ -410,6 +411,12 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 >Amostra do wp-includes
 
+##Diagrama do banco de dados 
+
+<p align = "justify">O diagrama abaixo fornece uma visão geral do banco de dados WordPress e as relações entre as tabelas criadas durante a instalação padrão do WordPress. A Visão Geral da Tabela abaixo inclui detalhes adicionais nas tabelas e colunas.</p>
+
+![diagramaDB](https://cloud.githubusercontent.com/assets/22482177/22305817/b449a7dc-e31b-11e6-9e18-beb66c44ce0f.png)
+
 ##Hierarquia dos Arquivos de Template
 
 
@@ -426,7 +433,7 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 <p align = "justify">O diagrama a seguir mostra quais arquivos de template são chamados para gerar uma página do WordPress baseado na hierarquia de arquivos.</p>
 
-![hieraquia-de-templat](https://cloud.githubusercontent.com/assets/22482177/22299498/11dda3f8-e303-11e6-93fa-d117c0e96481.png)
+![hieraquia-de-template](https://cloud.githubusercontent.com/assets/22482177/22299498/11dda3f8-e303-11e6-93fa-d117c0e96481.png)
 
 ###Padrões de código:
 
