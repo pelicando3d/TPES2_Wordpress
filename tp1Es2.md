@@ -232,20 +232,20 @@ Os times e suas respectivas funções são:
 ##Principais frameworks, ferramentas e linguagens usadas no desenvolvimento.
 
 
-As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
+<p align = "justify">As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.</p>
 
-Para controle de versão são utilizadas  duas ferramentas SVN e o Git.
-Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: 
-<p align = "justify">
+<p align = "justify">Para controle de versão são utilizadas  duas ferramentas SVN e o Git.</p>
+<p align = "justify">Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: </p>
+
 - MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.
 - WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.
 - Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
-- XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X. </p>
+- XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X. 
 
 <p align = "justify">
 Para automatizar as tarefas como minificação e concatenação de arquivos, deploy, dentre outras que, na maioria das vezes são tarefas em aplicações Javascript é utilizado o GRUNT, uma aplicação de linha de comando que basicamente escreve as tarefas em JavaScript utilizando Node.Js. Para utilizar o Grunt em um projeto, é necessário que exista dois arquivos: o Gruntfile.js e o package.json. Eles devem estar na raiz (diretório principal, root) do projeto.</p>
 
-Caso o projeto já utilize o Grunt (isto é, exista os arquivos Gruntfile.js e package.json), para rodar é bem simples. Segue um exemplo de criação do Grunt em um sistema Linux:
+<p align = "justify">Caso o projeto já utilize o Grunt (isto é, exista os arquivos Gruntfile.js e package.json), para rodar é bem simples. Segue um exemplo de criação do Grunt em um sistema Linux:</p>
 
 // Acesse a pasta do projeto
 cd project-folder
@@ -281,7 +281,7 @@ Antes, é necessário saber para que serve esses dois arquivos.
 <p align = "justify">As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.</p>
  
 <p align = "justify">O QUnit é um framework utilizado para realizar testes em códigos Javascript, principalmente o projeto jQuery e plugins. Esta ferramenta é realmente simples de usar. Basicamente é preciso apenas incluir os arquivos qunit.js e qunit.css e ter uma estrutura básica de HTML para que a biblioteca funcione corretamente. </p>
-<p align = "justify">As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.</p>
+<p align = "justify">As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress(https://wordpress.com).</p>
 
 
 
@@ -290,8 +290,8 @@ Antes, é necessário saber para que serve esses dois arquivos.
 ##Arquitetura do Wordpress 
 
 <p align = "justify">Por ser desenvolvido de forma colaborativa por pessoas de todo mundo, uma boa organização de modularização é essencial para o sucesso do Wordpress.</p>
-<p align = "justify">É importante destacar que a equipe do Wordpress preza por uma organização e entendimento do codigo por todos. </p>
-<p align = "justify">As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na pagina oficial da ferramenta.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+<p align = "justify">É importante destacar que a equipe do Wordpress preza por uma organização e entendimento do código por todos. </p>
+<p align = "justify">As orientações de como devem ser registradas as alterações no codigo podem ser encpntradas na página oficial da ferramenta (https://wordpress.com).  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
 
 <p align = "justify">O repositório oficial do Wordpress pode ser encontrado em [git://develop.git.wordpress.org][1]. Este repositório é responsável por armazenar todo o trabalho até então desenvolvido. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
@@ -367,7 +367,7 @@ Web Server (PHP)->Web Browser:Pagina Dinamica
 
 
 
-<p align = "justify">Um dos fatores que contribuem para o sucesso do Wordpress são os seus mais variados temas que podem ser utilizados pelo o usuario, o usuario tambem pode estar alterando estes temas tornando assim a sua experiência muito mais agradável e personalizada. Para permitir que a utilização dos temas seja feita de forma satisfatória é essencial uma boa organização e modularização dos códigos pertinentes a esta função. <\p>
+<p align = "justify">Um dos fatores que contribuem para o sucesso do Wordpress são os seus mais variados temas que podem ser utilizados pelo o usuario, o usuario tambem pode estar alterando estes temas tornando assim a sua experiência muito mais agradável e personalizada. Para permitir que a utilização dos temas seja feita de forma satisfatória é essencial uma boa organização e modularização dos códigos pertinentes a esta função. </p>
 ###WP-ADMIN
 #### <i class="icon-folder-open"></i>css
 #### <i class="icon-folder-open"></i>images
@@ -435,16 +435,15 @@ https://make.wordpress.org/core/handbook/best-practices/coding-standards/
 
 ##Referências
 
-http://www.wpexplorer.com/wordpress-internal-function
-https://developer.wordpress.org/themes/basics/template-hierarchy/
-https://delftswa.github.io/chapters/joomla/
-https://www.optimizesmart.com/wordpress-ninja-15-minutes/
-https://tableless.com.br/grunt-voce-deveria-estar-usando/
-https://tableless.com.br/phpunit-como-iniciar-sem-dores/
-https://tableless.com.br/tdd-por-que-usar/
-https://d2mm.wordpress.com/2010/12/22/qunit-para-jquery/
-
-[1]:git://develop.git.wordpress.org
+- http://www.wpexplorer.com/wordpress-internal-function
+- https://developer.wordpress.org/themes/basics/template-hierarchy/
+- https://delftswa.github.io/chapters/joomla/
+- https://www.optimizesmart.com/wordpress-ninja-15-minutes/
+- https://tableless.com.br/grunt-voce-deveria-estar-usando/
+- https://tableless.com.br/phpunit-como-iniciar-sem-dores/
+- https://tableless.com.br/tdd-por-que-usar/
+- https://d2mm.wordpress.com/2010/12/22/qunit-para-jquery/
+- [1]:git://develop.git.wordpress.org
 
 
 
