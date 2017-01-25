@@ -428,12 +428,93 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 ![hieraquia-de-templat](https://cloud.githubusercontent.com/assets/22482177/22299498/11dda3f8-e303-11e6-93fa-d117c0e96481.png)
 
-###Padrões de código:
+##Padrões de código:
 
 <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
-Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript e podem ser encontrados no endereço abaixo: 
+Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript:
+###CSS
+####Estrutura
+Correto:
+<pre class="prettyprint">
+<code class="lang-bsh">#selector-1,
+#selector-2,
+#selector-3 {
+		background: #fff;
+		color: #000;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint">
+<code class="lang-bsh">
+#selector-1, selector-2, selector-3 {
+		background: #fff;
+		color: #000;
+		}
+
+#selector-1 { background: #fff; color: #000; 6 }</code></pre>
+
+####Propriedades
+
+Correto:
+
+<pre class="prettyprint">
+<code class="lang-bsh">#selector-1 {
+		background: #fff;
+		display: block;
+		margin: 0;
+		margin-left: 20px;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint">
+<code class="lang-bsh">#selector-1 {
+		background:#FFFFFF;
+		display: BLOCK;
+		margin-left: 20PX;
+		margin: 0;
+}</code></pre>
+
+####Valores
+
+Correto:
+
+<pre class="prettyprint">
+<code class="lang-bsh">.class { /* Correct usage of quotes */
+		background-image: url(images/bg.png);
+		font-family: "Helvetica Neue", sans-serif;
+		font-weight: 700;
+}
+ 
+.class { /* Correct usage of zero values */
+		font-family: Georgia, serif;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
+		0 1px 0 #fff;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint">
+<code class="lang-bsh">.class { /* Avoid missing space and semicolon */
+		background:#fff
+}
+ 
+.class { /* Avoid adding a unit on a zero value */
+		margin: 0px 0px 20px 0px;
+}
+ 
+.class {
+		font-family: Times New Roman, serif; /* Quote font names when required */
+		font-weight: bold; /* Avoid named font weights */
+}</code></pre>
+
+
+###HTML
+###PHP
+###Javascript: 
+A lista completa dos padrões utilizados pode ser encontrada no endereço abaixo: 
 https://make.wordpress.org/core/handbook/best-practices/coding-standards/
+
+
 
 ##Referências
 
