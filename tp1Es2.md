@@ -25,13 +25,14 @@
 
 <p align = "justify">Os recursos nativos do Wordpress foram produzidos para tornar a experiência de publicação do usuário simples e agradável. O Wordpress é dotado de sistema de temas, API para a criação de plugins dentre outras coisas.</p>
 
-<p align = "justify">O usuário ao utilizar o Wordpress poderá personalizar a aparência do seu site utilizando XHTML e CSS. Também é dado a liberdade para que o usuário crie seu próprio tema. Além disso, o usuário tem a liberdade de escrever e utilizar os seus próprios plugins em PHP. 
-O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+<p align = "justify">O usuário ao utilizar o Wordpress poderá personalizar a aparência do seu site utilizando XHTML e CSS. Também é dado a liberdade para que o usuário crie seu próprio tema. Além disso, o usuário tem a liberdade de escrever e utilizar os seus próprios plugins em PHP. </p>
+<p align = "justify">O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+
 
 ##Principais desenvolvedores e equipe de desenvolvimento
 
 
-<p align = "justify">A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+<p align = "justify">A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente.</p>
 
 
 <p align = "justify">A organização tem uma parceria com a corporação Automattic, onde Matthew Mullenweg e Ryan Boren, dois dos desenvolvedores primários do WordPress e também outros desenvolvedores do software são funcionários. Outros desenvolvedores importantes são: Mark Jaquith, Andrew Nacin, Andrew Ozz e Peter Westwood. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
