@@ -435,91 +435,177 @@ Essa pasta contém os principais PHPs e classes que sao necessárias para as ope
 
 ![hieraquia-de-template](https://cloud.githubusercontent.com/assets/22482177/22299498/11dda3f8-e303-11e6-93fa-d117c0e96481.png)
 
+
 ##Padrões de código:
-
-<p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
-
-Existem padrões definidos para as linguagens:  CSS, HTML, PHP e Javascript:
-###CSS
-####Estrutura
-Correto:
-<pre class="prettyprint">
-<code class="lang-bsh">#selector-1,
-#selector-2,
-#selector-3 {
-		background: #fff;
-		color: #000;
-}</code></pre>
-
-Incorreto:
-<pre class="prettyprint">
-<code class="lang-bsh">
-#selector-1, selector-2, selector-3 {
-		background: #fff;
-		color: #000;
-		}
-
-#selector-1 { background: #fff; color: #000; 6 }</code></pre>
-
-####Propriedades
-
-Correto:
-
-<pre class="prettyprint">
-<code class="lang-bsh">#selector-1 {
-		background: #fff;
-		display: block;
-		margin: 0;
-		margin-left: 20px;
-}</code></pre>
-
-Incorreto:
-<pre class="prettyprint">
-<code class="lang-bsh">#selector-1 {
-		background:#FFFFFF;
-		display: BLOCK;
-		margin-left: 20PX;
-		margin: 0;
-}</code></pre>
-
-####Valores
-
-Correto:
-
-<pre class="prettyprint">
-<code class="lang-bsh">.class { /* Correct usage of quotes */
-		background-image: url(images/bg.png);
-		font-family: "Helvetica Neue", sans-serif;
-		font-weight: 700;
-}
+  		  
+  <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>		  <p align = "justify">Com o propósito de criar uma base para colaboração e revisão dos vários aspectos do projeto de código aberto do WordPress, tanto para o core, templates e plugins, foi definido uma série de padrões e boas práticas para o desenvolvimento.O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+  		  
+Existem padrões definidos para as linguagens:  PHP, HTML, CSS e Javascript:
  
-.class { /* Correct usage of zero values */
-		font-family: Georgia, serif;
-		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
-		0 1px 0 #fff;
-}</code></pre>
+###PHP
+####Identação:
+<p align = "justify">A identação deve sempre refletir a estrutura lógica do código. Deve-se usar tabulações ao invés de espaços (com exceção de que se tenha um bloco de código que fica mais legível se alinhado). A regra geral é: tabulações devem ser usadas no começo da linha para identação enquanto espaços podem ser usados no meio das linhas para alinhamento.</p>
 
-Incorreto:
+####elseif:
+* Usar elseif ao invés de else if.
+
+####Não usar atalhos para tags:
+Sempre usar o nome completo nas tags
+Correct:
+
 <pre class="prettyprint">
-<code class="lang-bsh">.class { /* Avoid missing space and semicolon */
-		background:#fff
-}
- 
-.class { /* Avoid adding a unit on a zero value */
-		margin: 0px 0px 20px 0px;
-}
- 
-.class {
-		font-family: Times New Roman, serif; /* Quote font names when required */
-		font-weight: bold; /* Avoid named font weights */
-}</code></pre>
+<code class="lang-bsh">&lt?php ... ?>
+&lt?php echo $var; ?></code></pre>
+Incorrect:
+<pre class="prettyprint">
+<code class="lang-bsh">&lt? ... ?>
+&lt?= $var ?></code></pre>
 
+####Nomeclaturas:
+* Usar letras em lowercase  para variáveis, ações e nomes funções. Usar "_" como separador de palavras. 
+* Não abreviar nomes desnecessáriamente
+<pre class="prettyprint">
+<code class="lang-bsh">function some_name( $some_variable ) { [...] }</code></pre>
+* classes devem ter nomes iniciados com letras maiúsculas e separados por "_".
+<pre class="prettyprint">
+<code class="lang-bsh">class Walker_Category extends Walker { [...] }
+class WP_HTTP { [...] }</code></pre>
+* Constantes devem estar em uppercase e devem ser separadas por "_".
+<pre class="prettyprint">
+<code class="lang-bsh">define( 'DOING_AJAX', true );</code></pre>
 
 ###HTML
-###PHP
-###Javascript: 
-A lista completa dos padrões utilizados pode ser encontrada no endereço abaixo: 
-https://make.wordpress.org/core/handbook/best-practices/coding-standards/
+####Atributos e Tags:
+* Precisam ser escritos em lowercase. 
+* Como podem ser lidos por humanos ou máquinas existem dois padrões:
+
+Para máquinas
+<pre class="prettyprint">
+<code class="lang-bsh">&ltmeta http-equiv="content-type" content="text/html; charset=utf-8" />
+</code></pre>
+Para humanos
+<pre class="prettyprint">
+<code class="lang-bsh">&lta href="http://example.com/" title="Description Here">Example.com&lt/a>
+</code></pre>
+
+####Identação:
+Assim como PHP,  a identação do HTML sempre precisa refletir a estrutura do código.
+
+Correto
+<pre class="prettyprint">
+<code class="lang-bsh">&lt?php if ( ! have_posts() ) : ?>
+    &ltdiv id="post-1" class="post">
+        &lth1 class="entry-title">Not Found&lt/h1>
+        &ltdiv class="entry-content">
+            &ltp>Apologies, but no results were found.&lt/p>
+            &lt?php get_search_form(); ?>
+        &lt/div>
+    &lt/div>
+&lt?php endif; ?>
+
+</code></pre> 
+
+Incorreto
+<pre class="prettyprint">
+<code class="lang-bsh">        &lt?php if ( ! have_posts() ) : ?>
+        &ltdiv id="post-0" class="post error404 not-found">
+            &lth1 class="entry-title">Not Found&lt/h1>
+            &ltdiv class="entry-content">
+            &ltp>Apologies, but no results were found.&lt/p>
+&lt?php get_search_form(); ?>
+            &lt/div>
+        &lt/div>
+&lt?php endif; ?>
+</code></pre>
+
+###CSS
+####Estrutura:
+
+ Correto:
+<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1,
+&#x23;selector-2,
+&#x23;selector-3 {
+ 		background: #fff;
+ 		color: #000;
+}</code></pre>
+
+Incorreto:
+<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1, &#x23;selector-2, &#x23;selector-3 {
+ 		background: #fff;
+ 		color: #000;
+ 		}
+ 
+&#x23;selector-1 { background: #fff; color: #000; 6 }</code></pre>
+####Propriedades:
+ 
+ Correto:
+ 
+<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
+ 		background: &#x23;fff;
+ 		display: block;
+ 		margin: 0;
+ 		margin-left: 20px;
+}</code></pre>
+ 
+ Incorreto:
+<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
+ 		background:&#x23;FFFFFF;
+ 		display: BLOCK;
+ 		margin-left: 20PX;
+ 		margin: 0;
+}</code></pre>
+ 
+####Valores:
+ 
+ Correto:
+ 
+<pre class="prettyprint"> <code class="lang-bsh">.class { /* Correct usage of quotes */
+ 		background-image: url(images/bg.png);
+ 		font-family: "Helvetica Neue", sans-serif;
+ 		font-weight: 700;
+ }
+  
+ .class { /* Correct usage of zero values */
+ 		font-family: Georgia, serif;
+ 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
+ 		0 1px 0 &#x23;fff;
+ }
+</code></pre>
+ 
+ Incorreto:
+ <pre class="prettyprint"> <code class="lang-bsh">.class { /* Avoid missing space and semicolon */
+ 		background:#fff
+ }
+  
+ .class { /* Avoid adding a unit on a zero value */
+ 		margin: 0px 0px 20px 0px;
+ }
+  
+ .class {
+ 		font-family: Times New Roman, serif; /* Quote font names when required */
+ 		font-weight: bold; /* Avoid named font weights */
+ }</code></pre>
+ 
+ 
+###JavaScript
+
+####Exemplo de bom espaçamento:
+<pre class="prettyprint">
+<code class="lang-bsh">var i;
+ 
+if ( condicao) {
+    facaAlgo( 'com uma string' );
+} else if ( outraCondicao) {
+    outraCoisa({
+        chave: valor,
+        outraChave: outroValor
+    });
+} else {
+    algumaOutraCoisa( true );
+}
+ 
+// Diferente de jQuery, WordPress prefere espaço após o operador de negação !
+// Isso também é feito nos padrões de PHP
 
 
 
