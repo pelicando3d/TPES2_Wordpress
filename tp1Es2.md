@@ -20,7 +20,8 @@
 
 <p align = "justify">A linguagem PHP é a mais utilizada no desenvolvimento do sistema back-end. As linguagens Javascript, HTML e CSS são utilizadas para as soluções front-end. </p>
 
-<p align = "justify">Wordpress é fácil de ser instalado e segundo o site do sistema a sua instalação leva cerca de 5 minutos para ser concluida. As suas atualizações são simples e podem ser realizadas automaticamente a partir das versões mais recentes. <\p>
+<p align = "justify">Wordpress é fácil de ser instalado e segundo o site do sistema a sua instalação leva cerca de 5 minutos para ser concluida. As suas atualizações são simples e podem ser realizadas automaticamente a partir das versões mais recentes. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+
 
 <p align = "justify">Os recursos nativos do Wordpress foram produzidos para tornar a experiência de publicação do usuário simples e agradável. O Wordpress é dotado de sistema de temas, API para a criação de plugins dentre outras coisas.</p>
 
@@ -30,7 +31,8 @@ O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que jun
 ## Principais desenvolvedores e equipe de desenvolvimento
 
 
-<p align = "justify">A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade.  <\p>
+<p align = "justify">A equipe de desenvolvimento do Wordpress é formada em sua maioria por pessoas de sua comunidade.  O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
+
 
 <p align = "justify">A organização tem uma parceria com a corporação Automattic, onde Matthew Mullenweg e Ryan Boren, dois dos desenvolvedores primários do WordPress e também outros desenvolvedores do software são funcionários. Outros desenvolvedores importantes são: Mark Jaquith, Andrew Nacin, Andrew Ozz e Peter Westwood. O Wordpress possui uma comunidade mundial de desenvolvedores e usuários que juntos fazem com que a ferramenta evolua continuamente. </p>
 
@@ -233,14 +235,14 @@ As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
 
 Para controle de versão são utilizadas  duas ferramentas SVN e o Git.
 Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: 
-
+<p align = "justify">
 - MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.
 - WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.
 - Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
-- XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X.
+- XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X. </p>
 
-
-Para automatizar as tarefas como minificação e concatenação de arquivos, deploy, dentre outras que, na maioria das vezes são tarefas em aplicações Javascript é utilizado o GRUNT, uma aplicação de linha de comando que basicamente escreve as tarefas em JavaScript utilizando Node.Js. Para utilizar o Grunt em um projeto, é necessário que exista dois arquivos: o Gruntfile.js e o package.json. Eles devem estar na raiz (diretório principal, root) do projeto.
+<p align = "justify">
+Para automatizar as tarefas como minificação e concatenação de arquivos, deploy, dentre outras que, na maioria das vezes são tarefas em aplicações Javascript é utilizado o GRUNT, uma aplicação de linha de comando que basicamente escreve as tarefas em JavaScript utilizando Node.Js. Para utilizar o Grunt em um projeto, é necessário que exista dois arquivos: o Gruntfile.js e o package.json. Eles devem estar na raiz (diretório principal, root) do projeto.</p>
 
 Caso o projeto já utilize o Grunt (isto é, exista os arquivos Gruntfile.js e package.json), para rodar é bem simples. Segue um exemplo de criação do Grunt em um sistema Linux:
 
@@ -252,7 +254,7 @@ sudo npm install
  
 // Rode o Grunt
 grunt
-
+<p align = "justify">
 Para iniciar um projeto com o Grunt existem algumas opções: Pode-se optar pelo grunt-init que gera o scaffolding para alguns modelos de aplicações, como:
 
  jquery: cria um projeto para um plugin jQuery
@@ -265,19 +267,20 @@ Você também pode baixar outros templates, além dos oficiais. Para criar um pr
 grunt-init
 Ou então iniciar o Grunt sem um template, criando os arquivos manualmente.
 Antes, é necessário saber para que serve esses dois arquivos.
+</p>
 
 - Gruntfile.js: Esse é um arquivo JavaScript que são definidas e configuradas as tarefas a serem executadas pelo Grunt.
 - package.json: Esse arquivo é usado pelo npm para armazenar as informações da aplicação, dados como nome, autor, repositório e dependências, e é por isso que o grunt precisa dele, para instalar as dependências e os plugins do grunt que seu projeto irá utilizar. Ao rodar o comando npm install, ele procura as dependências descritas nessa arquivo, e instala na pasta do projeto as mesmas com suas respectivas versões.
 
-Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. Ele provê um ecossistema para a execução de testes unitários de forma automatizada. O PHPUnlt segue os princípios do TDD (Test driven development), ou desenvolvimento de software orientado a testes. Esse desenvolvimento se baseia em 3 passos, vermelho-verde-refatora:
+<p align = "justify">Para realizar os testes nos códigos PHP é utilizando o framework de teste PHPUnIt. Ele provê um ecossistema para a execução de testes unitários de forma automatizada. O PHPUnlt segue os princípios do TDD (Test driven development), ou desenvolvimento de software orientado a testes. Esse desenvolvimento se baseia em 3 passos, vermelho-verde-refatora:</p>
 
-O vermelho é a escrita do primeiro teste antes mesmo da lógica existir. 
-O verde é o ponto em que a lógica para que o teste previamente criado passe. Esta lógica deve ser desenvolvida da forma mais simples possível eliminando complexidades desnecessárias fazendo com que a evolução do código ocorra de forma segura. 
+<p align = "justify">O vermelho é a escrita do primeiro teste antes mesmo da lógica existir. </p>
+<p align = "justify">O verde é o ponto em que a lógica para que o teste previamente criado passe. Esta lógica deve ser desenvolvida da forma mais simples possível eliminando complexidades desnecessárias fazendo com que a evolução do código ocorra de forma segura. 
 O refatora é a melhoria do código. Neste ponto são removidas duplicações, múltiplas responsabilidades e o código fica cada vez mais próximo de sua versão final.
-As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.
+As informações referentes a como instalar e utilizar a ferramenta podem ser encontradas na página oficial do Wordpress.</p>
  
-O QUnit é um framework utilizado para realizar testes em códigos Javascript, principalmente o projeto jQuery e plugins. Esta ferramenta é realmente simples de usar. Basicamente é preciso apenas incluir os arquivos qunit.js e qunit.css e ter uma estrutura básica de HTML para que a biblioteca funcione corretamente. 
-As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.
+<p align = "justify">O QUnit é um framework utilizado para realizar testes em códigos Javascript, principalmente o projeto jQuery e plugins. Esta ferramenta é realmente simples de usar. Basicamente é preciso apenas incluir os arquivos qunit.js e qunit.css e ter uma estrutura básica de HTML para que a biblioteca funcione corretamente. 
+As informações sobre a instalação e utilização do mesmo também podem ser encontradas no site oficial do Wordpress.</p>
 
 
 
