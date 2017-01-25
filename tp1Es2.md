@@ -237,9 +237,12 @@ As principais linguagens utilizadas são PHP, Javascript, HTML e CSS.
 Para controle de versão são utilizadas  duas ferramentas SVN e o Git.
 Para desenvolvimento local os desenvolvedores utilizam os seguintes frameworks: 
 <p align = "justify">
-- MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X.
-- WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.
-- Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.
+- MAMP: MAMP é acrônimo para a combinação Mac, Apache, MySql e PHP e se refere ao conjunto de programas comumente usados para desenvolver sites dinâmicos sobre sistemas operacionais Apple Macintosh, MAC OS X. </p>
+<p align = "justify">
+- WAMP: WAMP é acrônimo para a combinação Windows Apache MySQL PHP. WAMP é o termo usado para denominar os softwares que efetuam a instalação automática de vários softwares de forma que facilitem e agilizem a instalação dos mesmos.</p>
+<p align = "justify">
+- Vagrant: é um programa de código aberto para construir e manter ambientes de desenvolvimento virtuais.</p>
+<p align = "justify">
 - XAMPP: XAMPP é um servidor independente de plataforma, software livre, que consiste principalmente na base de dados MySQL, o qual foi substituído pelo MariaDB, o servidor web Apache e os interpretadores para linguagens de script: PHP e Perl. O nome provem da abreviação de X (para qualquer dos diferentes sistemas operativos), Apache, MariaDB, PHP, Perl. Atualmente XAMPP está disponível para Microsoft Windows, GNU/Linux, Solaris, e MacOS X. </p>
 
 <p align = "justify">
@@ -263,12 +266,14 @@ Para iniciar um projeto com o Grunt existem algumas opções: Pode-se optar pelo
  Gruntfile: cria um arquivo Gruntfile.js básico
  gruntplugin: cria um plugin grunt
  node: cria um módulo Node.JS
-Você também pode baixar outros templates, além dos oficiais. Para criar um projeto a partir de um dos template como os descritos acima basta usar o comando:
+<p align = "justify">
+Você também pode baixar outros templates, além dos oficiais. Para criar um projeto a partir de um dos template como os descritos acima basta usar o comando:</p>
 
 grunt-init
-Ou então iniciar o Grunt sem um template, criando os arquivos manualmente.
-Antes, é necessário saber para que serve esses dois arquivos.
 
+<p align = "justify">
+Ou então iniciar o Grunt sem um template, criando os arquivos manualmente. 
+Antes porém. é necessário saber para que serve esses dois arquivos.</p>
 
 - Gruntfile.js: Esse é um arquivo JavaScript que são definidas e configuradas as tarefas a serem executadas pelo Grunt.
 - package.json: Esse arquivo é usado pelo npm para armazenar as informações da aplicação, dados como nome, autor, repositório e dependências, e é por isso que o grunt precisa dele, para instalar as dependências e os plugins do grunt que seu projeto irá utilizar. Ao rodar o comando npm install, ele procura as dependências descritas nessa arquivo, e instala na pasta do projeto as mesmas com suas respectivas versões.
