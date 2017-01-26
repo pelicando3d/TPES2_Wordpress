@@ -494,97 +494,97 @@ Assim como PHP, a identação do HTML sempre precisa refletir a estrutura do có
 Correto
 <pre class="prettyprint">
 <code class="lang-bsh">&lt?php if ( ! have_posts() ) : ?>
- &ltdiv id="post-1" class="post">
- &lth1 class="entry-title">Not Found&lt/h1>
- &ltdiv class="entry-content">
- &ltp>Apologies, but no results were found.&lt/p>
- &lt?php get_search_form(); ?>
- &lt/div>
- &lt/div>
+   &ltdiv id="post-1" class="post">
+      &lth1 class="entry-title">Not Found&lt/h1>
+      &ltdiv class="entry-content">
+         &ltp>Apologies, but no results were found.&lt/p>
+         &lt?php get_search_form(); ?>
+      &lt/div>
+   &lt/div>
 &lt?php endif; ?>
 
 </code></pre> 
 
 Incorreto
 <pre class="prettyprint">
-<code class="lang-bsh"> &lt?php if ( ! have_posts() ) : ?>
- &ltdiv id="post-0" class="post error404 not-found">
- &lth1 class="entry-title">Not Found&lt/h1>
- &ltdiv class="entry-content">
- &ltp>Apologies, but no results were found.&lt/p>
+<code class="lang-bsh">      &lt?php if ( ! have_posts() ) : ?>
+      &ltdiv id="post-0" class="post error404 not-found">
+         &lth1 class="entry-title">Not Found&lt/h1>
+         &ltdiv class="entry-content">
+         &ltp>Apologies, but no results were found.&lt/p>
 &lt?php get_search_form(); ?>
- &lt/div>
- &lt/div>
+         &lt/div>
+      &lt/div>
 &lt?php endif; ?>
 </code></pre>
 
 ###CSS
 ####Estrutura:
 
- Correto:
+Correto:
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1,
 &#x23;selector-2,
 &#x23;selector-3 {
- background: #fff;
- color: #000;
+   background: #fff;
+   color: #000;
 }</code></pre>
 
 Incorreto:
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1, &#x23;selector-2, &#x23;selector-3 {
- background: #fff;
- color: #000;
- }
+   background: #fff;
+   color: #000;
+   }
  
 &#x23;selector-1 { background: #fff; color: #000; 6 }</code></pre>
 ####Propriedades:
  
- Correto:
+Correto:
  
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
- background: &#x23;fff;
- display: block;
- margin: 0;
- margin-left: 20px;
+   background: &#x23;fff;
+   display: block;
+   margin: 0;
+   margin-left: 20px;
 }</code></pre>
  
- Incorreto:
+Incorreto:
 <pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
- background:&#x23;FFFFFF;
- display: BLOCK;
- margin-left: 20PX;
- margin: 0;
+   background:&#x23;FFFFFF;
+   display: BLOCK;
+   margin-left: 20PX;
+   margin: 0;
 }</code></pre>
  
 ####Valores:
  
- Correto:
+Correto:
  
 <pre class="prettyprint"> <code class="lang-bsh">.class { /* Correct usage of quotes */
- background-image: url(images/bg.png);
- font-family: "Helvetica Neue", sans-serif;
- font-weight: 700;
- }
+   background-image: url(images/bg.png);
+   font-family: "Helvetica Neue", sans-serif;
+   font-weight: 700;
+}
  
- .class { /* Correct usage of zero values */
- font-family: Georgia, serif;
- text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
- 0 1px 0 &#x23;fff;
- }
+.class { /* Correct usage of zero values */
+   font-family: Georgia, serif;
+   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5),
+                     0 1px 0 &#x23;fff;
+}
 </code></pre>
  
- Incorreto:
- <pre class="prettyprint"> <code class="lang-bsh">.class { /* Avoid missing space and semicolon */
- background:#fff
- }
+Incorreto:
+<pre class="prettyprint"> <code class="lang-bsh">.class { /* Avoid missing space and semicolon */
+   background:#fff
+}
  
- .class { /* Avoid adding a unit on a zero value */
- margin: 0px 0px 20px 0px;
- }
+.class { /* Avoid adding a unit on a zero value */
+   margin: 0px 0px 20px 0px;
+}
  
- .class {
- font-family: Times New Roman, serif; /* Quote font names when required */
- font-weight: bold; /* Avoid named font weights */
- }</code></pre>
+.class {
+   font-family: Times New Roman, serif; /* Quote font names when required */
+   font-weight: bold; /* Avoid named font weights */
+}</code></pre>
  
  
 ###JavaScript
@@ -594,31 +594,31 @@ Incorreto:
 <code class="lang-bsh">var i;
  
 if ( condicao) {
- facaAlgo( 'com uma string' );
+   facaAlgo( 'com uma string' );
 } else if ( outraCondicao) {
- outraCoisa({
- chave: valor,
- outraChave: outroValor
- });
+   outraCoisa({
+      chave: valor,
+      outraChave: outroValor
+   });
 } else {
- algumaOutraCoisa( true );
+   algumaOutraCoisa( true );
 }
  
 // Diferente de jQuery, WordPress prefere espaço após o operador de negação !
 // Isso também é feito nos padrões de PHP
 while ( ! condicao) {
- iterando++;
+   iterando++;
 }
  
 for ( i = 0; i &lt 100; i++ ) {
- object[ array[ i ] ] = funcao( i );
- $( '.container' ).val( array[ i ] );
+   object[ array[ i ] ] = funcao( i );
+   $( '.container' ).val( array[ i ] );
 }
  
 try {
- // expressões
+   // expressões
 } catch ( e ) {
- // expressões
+   // expressões
 }</code></pre>
 
 ####Arrays:
@@ -653,13 +653,13 @@ var i, max;
  
 // getItemCount() tem uma chamada apenas
 for ( i = 0, max = getItemCount(); i &lt max; i++ ) {
- // faz algo
+   // faz algo
 }
  
 // Ruim e potencialmente ineficiente
 // getItemCount() é chamado a cada iteração
 for ( i = 0; i &lt getItemCount(); i++ ) {
- // faz algo
+   // faz algo
 }</code></pre>
 
 ####JSHint:
