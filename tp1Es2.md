@@ -522,7 +522,7 @@ Incorreto
 ####Estrutura:
 
 Correto:
-<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1,
+<pre class="prettyprint"><code class="lang-bsh">&#x23;selector-1,
 &#x23;selector-2,
 &#x23;selector-3 {
    background: #fff;
@@ -530,7 +530,7 @@ Correto:
 }</code></pre>
 
 Incorreto:
-<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1, &#x23;selector-2, &#x23;selector-3 {
+<pre class="prettyprint"><code class="lang-bsh">&#x23;selector-1, &#x23;selector-2, &#x23;selector-3 {
    background: #fff;
    color: #000;
    }
@@ -540,7 +540,7 @@ Incorreto:
  
 Correto:
  
-<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
+<pre class="prettyprint"><code class="lang-bsh">&#x23;selector-1 {
    background: &#x23;fff;
    display: block;
    margin: 0;
@@ -548,7 +548,7 @@ Correto:
 }</code></pre>
  
 Incorreto:
-<pre class="prettyprint"> <code class="lang-bsh">&#x23;selector-1 {
+<pre class="prettyprint"><code class="lang-bsh">&#x23;selector-1 {
    background:&#x23;FFFFFF;
    display: BLOCK;
    margin-left: 20PX;
@@ -559,7 +559,7 @@ Incorreto:
  
 Correto:
  
-<pre class="prettyprint"> <code class="lang-bsh">.class { /* Correct usage of quotes */
+<pre class="prettyprint"><code class="lang-bsh">.class { /* Correct usage of quotes */
    background-image: url(images/bg.png);
    font-family: "Helvetica Neue", sans-serif;
    font-weight: 700;
@@ -573,7 +573,7 @@ Correto:
 </code></pre>
  
 Incorreto:
-<pre class="prettyprint"> <code class="lang-bsh">.class { /* Avoid missing space and semicolon */
+<pre class="prettyprint"><code class="lang-bsh">.class { /* Avoid missing space and semicolon */
    background:#fff
 }
  
